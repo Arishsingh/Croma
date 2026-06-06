@@ -231,11 +231,3 @@ npm run build    # production build → dist/
 
 ---
 
-<div align="center">
-
-Built with Preact + CRXJS · MIT License
-
-**[Landing Page](https://arishsingh.github.io/croma) · [Blog Post](https://dev.to/arishsingh99/ai-platform-that-turns-your-resume-into-proof-that-you-can-actually-code-k9i) · [GitHub](https://github.com/Arishsingh/croma)**
-
-</div>
-# Croma
