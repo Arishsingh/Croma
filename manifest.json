@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Croma",
+  "version": "0.1.0",
+  "description": "AI dev tools inside your browser",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background/service-worker.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/content.tsx"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  },
+  "devtools_page": "src/devtools/devtools.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["src/devtools/panel.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,10 +1,6 @@
 <div align="center">
 
-```
-   ✳  ✳  ✳
- ✳  croma  ✳
-   ✳  ✳  ✳
-```
+![Croma Banner](landing/b.png)
 
 # Croma
 

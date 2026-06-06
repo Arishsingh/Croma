@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { background: #0d0d14; color: #e2e2ee; font-family: ui-monospace, monospace; font-size: 13px; margin: 0; }
+
+.panel { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+.section { flex: 1; overflow-y: auto; padding: 12px 16px; min-height: 0; }
+.section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #555566; margin-bottom: 10px; }
+.divider { height: 1px; background: #1e1e30; flex-shrink: 0; }
+
+/* requests */
+.requests { display: flex; flex-direction: column; gap: 4px; }
+.empty { color: #444455; padding: 8px 0; }
+.request { border: 1px solid #1e1e30; border-radius: 6px; overflow: hidden; }
+.request.flagged { border-color: #7c3aed44; }
+.request-header { display: flex; align-items: center; gap: 8px; padding: 6px 10px; background: #13131c; }
+.method { color: #a78bfa; font-weight: 600; flex-shrink: 0; width: 40px; }
+.url { flex: 1; color: #888899; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.status { flex-shrink: 0; }
+.status.err { color: #f87171; }
+.duration { flex-shrink: 0; color: #888899; }
+.duration.slow { color: #fbbf24; }
+.ai-result { padding: 8px 10px; background: #0d0d14; color: #c4b5fd; line-height: 1.6; white-space: pre-wrap; border-top: 1px solid #1e1e30; }
+.loading { color: #555566; font-style: italic; }
+
+/* console */
+.hint { color: #555566; margin-bottom: 8px; font-size: 12px; }
+.hint code { color: #a78bfa; }
+.console-form { display: flex; flex-direction: column; gap: 8px; }
+.console-input {
+  width: 100%;
+  background: #13131c;
+  border: 1px solid #1e1e30;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #e2e2ee;
+  font-family: inherit;
+  font-size: 13px;
+  resize: vertical;
+  outline: none;
+  line-height: 1.6;
+}
+.console-input:focus { border-color: #7c3aed; }
+.run-btn {
+  align-self: flex-start;
+  padding: 7px 20px;
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.run-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.console-output {
+  margin-top: 12px;
+  background: #13131c;
+  border: 1px solid #1e1e30;
+  border-radius: 6px;
+  padding: 10px 12px;
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: #c4b5fd;
+}
