@@ -10,9 +10,6 @@
 
 A Chrome extension that watches what you're doing — explains selected code, catches console errors, monitors failing API calls, and answers questions about whatever page you're on. Without leaving your tab.
 
-[![Landing Page](https://img.shields.io/badge/Landing-Page-7c6af7?style=for-the-badge&logoColor=white)](https://arishsingh.github.io/croma)
-[![Blog Post](https://img.shields.io/badge/dev.to-Blog_Post-000000?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/arishsingh99/ai-platform-that-turns-your-resume-into-proof-that-you-can-actually-code-k9i)
-[![License](https://img.shields.io/badge/License-MIT-a78bfa?style=for-the-badge)](LICENSE)
 
 </div>
 
