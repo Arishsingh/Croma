@@ -224,3 +224,5 @@ npm run build    # production build → dist/
 
 ---
 
+read detailed stuff on :- https://dev.to/arishsingh99/built-a-chrome-extension-that-watches-my-dev-tab-and-explains-everything-3mob
+
